@@ -11,13 +11,13 @@ materias = []
 
 for i in range(qtde_mat):
     materia = str(input(f'Nome da {i+1}º matéria: '))
-    notas = str(input(f'Notas das provas de {materia} (separadas por espaço): ')).split()
-    print('\033[33m------Matéria/Notas salvas!------\033[0m')
+    notas = str(input(f'Notas das provas (separadas por espaço): ')).split()
+    print('\033[33m---------Matéria/Notas salvas!---------\033[0m')
     sleep(0.4)
     notas = [float(nota) for nota in notas]
     materias.append([materia] + notas)
 
-print('\033[33m------Processando...------\033[0m')
+print('\033[33m-------------Processando...------------\033[0m')
 sleep(0.7)
 
 for materia in materias:
@@ -25,7 +25,7 @@ for materia in materias:
     notas = np.array(materia[1:])
     media = np.mean(notas)
     status = '\033[32mAprovado\033[0m' if media >= media_escola else '\033[31mRecuperacao\033[0m'
-    print(f'Matéria: {nome}, Média: {media:.2f}, Status: {status}')
+    print(f'\033[1;33mMatéria:\033[0m {nome:25} \033[1;33mMédia:\033[0m {media:.2f} \033[1;33mStatus:\033[0m {status}')
 
 sleep(2.0)
 print('\033[35mFeito por: VitorRenanSD\033[0m')
