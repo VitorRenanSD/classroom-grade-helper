@@ -27,6 +27,6 @@ for materia in materias:
     status = '\033[32mAprovado\033[0m' if media >= media_escola else '\033[31mRecuperacao\033[0m'
     print(f'\033[1;33mMatéria:\033[0m {nome:25} \033[1;33mMédia:\033[0m {media:.2f} \033[1;33mStatus:\033[0m {status}')
 
-sleep(2.0)
+sleep(1.5)
 print('\033[35mFeito por: VitorRenanSD\033[0m')
 webbrowser.open('https://www.codewars.com/users/VIC_BR')
