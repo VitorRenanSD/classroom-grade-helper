@@ -29,4 +29,4 @@ for subject in subjects:
 
 sleep(1.5)
 print('\033[35mCreated by: VitorRenanSD\033[0m')
-webbrowser.open('https://www.codewars.com/users/VIC_BR')
+webbrowser.open('https://github.com/VitorRenanSD')
